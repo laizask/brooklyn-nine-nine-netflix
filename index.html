@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="assets/logo.png"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tv Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="assets/bg.png" class="bg">
+
+        <div class="content">
+            <img src="assets/name.png" class="movieTitle">
+            <h4>
+                <span>2013</span>
+                <span><i>14+</i></span>
+                <span>8 Temporadas</span>
+                <span>Comédia</span>
+            </h4>
+            <p>
+                O brilhante e imaturo detetive Jake Peralta precisa aprender a seguir as regras e trabalhar em equipe quando um capitão exigente assume o comando de seu esquadrão.
+            </p>
+
+            <div class="buttons">
+                <a href="#"><i class="fas fa-play" aria-hidden="true"></i> Play</a>
+                <a href="#"><i class="fas fa-plus" aria hidden="true"></i> My List</a>
+
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo()"><img src="assets/play.png">Watch Trailer</a>
+    </div>
+    <div class="trailer" id="trailer">
+        <video id="trailerVideo" src="assets/video.mp4" controls="true"></video>
+        <img src="assets/close.png" class="close" onclick="toggleVideo()">
+    </div>
+    <script src="src/script.js"></script>
+</body>
+</html>
